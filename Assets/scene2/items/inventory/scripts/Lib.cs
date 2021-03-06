@@ -7,8 +7,8 @@ using System.Collections;
 public class Lib : MonoBehaviour  
 {
     
-     public string Name;
+     public string[] Name;
     
-     public Texture Image;
+     public Texture[] Images;
 
 }
