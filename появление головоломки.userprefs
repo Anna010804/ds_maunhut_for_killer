@@ -1,0 +1,18 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scr\ToTakeObjects.cs">
+    <Files>
+      <File FileName="Assets\scr\script1.cs" Line="1" Column="1" />
+      <File FileName="Assets\scr\OnClick.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\CheckWin.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GameController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Puzzle.cs" Line="1" Column="1" />
+      <File FileName="Assets\scr\ToTakeObjects.cs" Line="14" Column="124" />
+      <File FileName="Assets\scr\IMAGEMASSIV.cs" Line="7" Column="33" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
