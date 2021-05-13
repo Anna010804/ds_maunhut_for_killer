@@ -15,7 +15,9 @@ public class GameController : MonoBehaviour {
 	public static Vector3[,] position;
 	public int[] checkmas;
 	private static bool win=false;
+	GameObject gridSwap;
 
+	public GameObject Inventory;
 	public float startPosX;
 	public float startPosY;
 	public float offsetX;
@@ -264,7 +266,14 @@ public class GameController : MonoBehaviour {
 		{
 			for(int x = 0; x < 4; x++)
 			{
-				if(grid[x,y]) { if(grid[x,y].GetComponent<Puzzle>().ID == i) i++; } else i--;
+				if (grid [x, y]) { 
+					if (grid [x, y].GetComponent<Puzzle> ().ID == i)
+						i++; 
+				} 
+				else 
+				{
+					i--;
+				}
 			}
 		}
 		i = 15;
@@ -283,12 +292,42 @@ public class GameController : MonoBehaviour {
 			script1.IsGameSolved = true;
 			Debug.Log("Пользователь решил головоломку");
 			Debug.Log ("Появление свечи");
-		Debug.Log ("Взять предмет"); Instantiate (svecha, new Vector3 (-3f, -4f, 0f), Quaternion.identity);
-	
+	 		Instantiate (svecha, new Vector3 (-3.4f, 3f, 0f), Quaternion.identity);
+	Debug.Log ("взятие свечи.");
+  if (svecha.TryGetComponent(out SpriteRenderer component))
+        {
+            Debug.Log("found Sprite component");
+           Inventory.GetComponent<Inventory>().Add(3,component.sprite.texture);
+            transform.position = new Vector3(-10f, -2f, 0f);
 
+	}
+ }	}
 
-  		
-}
-}
+	public void GameFinishButton2()
+	{
+		
+		for(int y = 0; y < 4; y++)
+		{
+			for(int x = 0; x < 4; x++)
+			{
+				if (grid [x, y].GetComponent<Puzzle> ().ID == 1) {
+					gridSwap = grid [0, 0];
+					grid [0, 0] = grid [x, y];
+					grid [x, y] = gridSwap;
+				}
+				else if (grid [x, y].GetComponent<Puzzle> ().ID == 2) {
+					gridSwap = grid [1, 0];
+					grid [1, 0] = grid [x, y];
+					grid [x, y] = gridSwap;
+				}
+				else if (grid [x, y].GetComponent<Puzzle> ().ID == 3) {
+					gridSwap = grid [2, 0];
+					grid [2, 0] = grid [x, y];
+					grid [x, y] = gridSwap;
+				}
+			}
+		}
+
+	}
 
 }

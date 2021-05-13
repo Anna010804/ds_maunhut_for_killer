@@ -31,7 +31,7 @@ public class Inventory : MonoBehaviour
             for (int y=0; y<5; y++)
             {
                 int pos=y*5+x;
-                if (GUI.Button(new Rect(x*100, y*100, 100, 100), lib.Images[pos]))
+               if (GUI.Button(new Rect(x*100, y*100, 100, 100), lib.Images[pos]))
                 {
                     if (lib.Images[pos]!=null) {
                        if (mouseSlot<25) {
@@ -57,6 +57,4 @@ public class Inventory : MonoBehaviour
         if (mouseSlot<25)
           if (lib.Images[25]!=null)  GUI.DrawTexture(new Rect(Input.mousePosition.x, Screen.height - Input.mousePosition.y, 100, 100), lib.Images[25]);
     }
-
-
 }

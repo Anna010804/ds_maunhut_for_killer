@@ -70,7 +70,9 @@
      <Compile Include="Assets\scene2\items\inventory\scripts\Inventory.cs" />
      <Compile Include="Assets\scene2\items\inventory\scripts\Lib.cs" />
      <Compile Include="Assets\scene2\items\inventory\scripts\inven.cs" />
+     <Compile Include="Assets\scr\IMAGEMASSIV.cs" />
      <Compile Include="Assets\scr\OnClick.cs" />
+     <Compile Include="Assets\scr\ToTakeObjects.cs" />
      <Compile Include="Assets\scr\script1.cs" />
  <Reference Include="UnityEngine">
  <HintPath>f:/Users/Анна/Desktop/2019.3.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
