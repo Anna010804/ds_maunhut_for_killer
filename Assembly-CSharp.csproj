@@ -57,7 +57,9 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\CheckWin.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
+     <Compile Include="Assets\Scripts\Onclick.cs" />
      <Compile Include="Assets\Scripts\Puzzle.cs" />
+     <Compile Include="Assets\Scripts\dialue.cs" />
      <Compile Include="Assets\scene1\scripts\MenuControls.cs" />
      <Compile Include="Assets\scene1\scripts\SettingsControls.cs" />
      <Compile Include="Assets\scene1\scripts\btnfx.cs" />

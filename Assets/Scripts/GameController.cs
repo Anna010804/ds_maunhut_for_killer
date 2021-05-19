@@ -26,6 +26,7 @@ public class GameController : MonoBehaviour {
 	private int sum = 0;
 	private int zero = 0;
 	private int h;
+  public GameObject StartOfDialogButt;
 	private int v;
 
 	private static GameObject txt;
@@ -292,13 +293,13 @@ public class GameController : MonoBehaviour {
 			script1.IsGameSolved = true;
 			Debug.Log("Пользователь решил головоломку");
 			Debug.Log ("Появление свечи");
-	 		Instantiate (svecha, new Vector3 (-3.4f, 3f, 0f), Quaternion.identity);
+	 		Instantiate (svecha, new Vector3 (1.95f, -2.7f, 0f), Quaternion.identity);
 	Debug.Log ("взятие свечи.");
-  if (svecha.TryGetComponent(out SpriteRenderer component))
+ Debug.Log ("Начало диалога"); Instantiate (StartOfDialogButt, new Vector3 (1.95f, -2.7f, 0f), Quaternion.identity);  //if (svecha.TryGetComponent(out SpriteRenderer component))
         {
             Debug.Log("found Sprite component");
-           Inventory.GetComponent<Inventory>().Add(3,component.sprite.texture);
-            transform.position = new Vector3(-10f, -2f, 0f);
+           //Inventory.GetComponent<Inventory>().Add(3,component.sprite.texture);
+           // transform.position = new Vector3(-2.4f, -4f, 0f);
 
 	}
  }	}
